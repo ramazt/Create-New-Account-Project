@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align:center;">Create New Account</h2>
+    <form id="signupForm" onsubmit="return validateForm()">
+        <label>First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label>Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <button type="submit">Submit</button>
+        <p id="errorMsg" class="error"></p>
+        <p id="successMsg" class="success"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
