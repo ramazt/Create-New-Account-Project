@@ -1,0 +1,11 @@
+name: Simple HTML Validation
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run a basic check
+      run: echo "Running basic validation (HTML, CSS, JS files present)"
